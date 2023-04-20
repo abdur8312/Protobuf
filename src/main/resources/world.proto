@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package com.abdur8312.protoFiles;
+
+message World 
+{
+	string fName = 1;
+	string lName = 2;
+}
