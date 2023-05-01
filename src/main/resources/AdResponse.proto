@@ -1,0 +1,54 @@
+syntax = "proto3";
+
+package com.abdur8312.protoFiles;
+//import "google/protobuf/any.proto";
+
+message BidResponse {
+
+  string id = 1;
+  repeated Seatbid seatbid = 2;
+  string bidid = 3;
+  string cur = 4;
+  string customdata = 5;
+  int32 nbr = 6;
+
+}
+
+message Seatbid {
+
+  repeated Bid bid = 1;
+  string seat = 2;
+  int32 group = 3;
+
+}
+
+message Bid {
+
+  string id = 1;
+  string impid = 2;
+  float price = 3;
+  string nurl = 4;
+  string burl = 5;
+  string lurl = 6;
+  string adm = 7;
+  string adid = 8;
+  repeated string adomain = 9;
+  string bundle = 10;
+  string iurl = 11;
+  string cid = 12;
+  string crid = 13;
+  string tactic = 14;
+  repeated string cat = 15;
+  repeated int32 attr = 16;
+  int32 api = 17;
+  int32 protocol = 18;
+  int32 qagmediarating = 19;
+  string language = 20;
+  string dealid = 21;
+  int32 w = 22;
+  int32 h = 23;
+  int32 wratio = 24;
+  int32 hratio = 25;
+  int32 exp = 26;
+
+}
